@@ -128,8 +128,8 @@
             //$("#" + panelid).toggle();
             $(".panel").width(($(window).width() / numofactivepanels) - 10);
         });
-
-        $(".panel").height($(window).height() - $("#header").height() - 15);
+        $(".panel").height($(window).height()* (50/100));
+        //$(".panel").height($(window).height() - $("#header").height() - 15);
         $(".panel").width(($(window).width() / 2) - 10);
 
         updateoutput();
@@ -139,7 +139,7 @@
         });
     </script>
     <div>
-        <canvas id="clock" width="500" height="500">
+        <canvas id="clock" width="200" height="200">
       
       Please upgrade your browser.
       </canvas>
